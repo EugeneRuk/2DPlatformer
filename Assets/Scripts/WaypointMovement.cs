@@ -4,10 +4,10 @@ public class WaypointMovement : MonoBehaviour
 {
     [SerializeField] private Transform _path;
     [SerializeField] private float _speed;
+    [SerializeField] private bool _facingRight = false;
 
     private Transform[] _points;
     private int _currentPoint;
-    private bool _facingRight = false;
     private float _pointRadius = 1;
 
     private void Start()

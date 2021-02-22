@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] [Range(0, 500)] private float _movingSpeed = 350;
     [SerializeField] [Range(0, 500)] private float _jumpForce = 350;
     [SerializeField] private LayerMask _ground;
+    [SerializeField] private bool _facingRight = true;
 
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
@@ -15,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     private float _xMovement;
     private bool _isGrounded;
     private bool _isJumped = false;
-    private bool _facingRight = true;
 
     private void Awake()
     {
